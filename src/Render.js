@@ -8,10 +8,11 @@ const Render = {
         canvas.style.top = "50%";
         canvas.style.left = "50%";
         canvas.style.transform = "translate(-50%, -50%)";
+        canvas.style.border = "5px solid #333333";
         document.body.appendChild(canvas);
         
         // background color 
-        document.body.style.backgroundColor = "grey";
+        document.body.style.backgroundColor = "black";
 
         Render.resizeCanvas(canvas);
 
