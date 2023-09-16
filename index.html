@@ -4,9 +4,16 @@
 </head>
 <body>
     <!-- Architecture Stuff -->
-    <script src="GameControl/EventBus.js"></script>
+    <script src="src/EventBus.js"></script>
+    <script src="src/GameState.js"></script>
 
-    <script src="index.js"></script>
-    Hello World!
+    <!-- Systems -->
+    <script src="src/Render.js"></script>
+
+    <!-- Start! -->
+    <script>
+        //DEBUG_MODE = true;
+        EventBus.publish("GameStart");
+    </script>
 </body>
 </html>
